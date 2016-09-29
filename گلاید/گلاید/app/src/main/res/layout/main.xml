@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:cardview="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	>
+
+	<LinearLayout
+		android:id="@+id/offerCard"
+		cardview:cardPreventCornerOverlap="false">
+
+		<LinearLayout
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<LinearLayout
+				android:layout_gravity="top"
+				android:orientation="vertical"
+				android:paddingTop="5.0dip"
+				android:paddingBottom="5.0dip"
+				android:layout_width="0.0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0">
+
+				<TextView
+					android:textColor="#000000"
+					android:gravity="right|center"
+					android:id="@+id/offerTitle"
+					android:paddingLeft="4.0dip"
+					android:paddingRight="4.0dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:maxLines="2"/>
+
+				<TextView
+					android:textColor="#000000"
+					android:gravity="bottom|center|right"
+					android:id="@+id/offerPrice"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="2.0dip"/>
+
+				<LinearLayout
+					android:layout_gravity="right"
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:textColor="#000000"
+						android:gravity="center|right"
+						android:id="@+id/offerDate"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="2.0dip"
+						android:maxLines="2"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<ImageView
+				android:layout_gravity="center_vertical"
+				android:id="@+id/offerImage"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:scaleType="centerCrop"
+				android:adjustViewBounds="true"
+				android:contentDescription="@string/app_name"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</FrameLayout>
+
